@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Starfall Harvest — catch the falling stars</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="stage">
+  <header class="titlebar">
+    <h1>STARFALL HARVEST</h1>
+    <p class="tagline">Catch the falling stars. Dodge the meteors. Reach 500 to complete the harvest.</p>
+  </header>
+  <canvas id="game" width="960" height="640" aria-label="Starfall Harvest game canvas"></canvas>
+  <div class="controls">
+    <button id="startBtn" type="button">▶ Start Harvest</button>
+    <button id="pauseBtn" type="button">II Pause</button>
+    <button id="muteBtn" type="button">♪ Sound</button>
+  </div>
+  <p id="status" class="status" aria-live="polite">Press Start or hit Space to play.</p>
+  <footer class="help">
+    <span>← → or A / D to move</span>
+    <span>Mouse steers too</span>
+    <span>Space to start</span>
+    <span>P to pause</span>
+    <span>M to mute</span>
+    <span>R to restart</span>
+  </footer>
+</main>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
